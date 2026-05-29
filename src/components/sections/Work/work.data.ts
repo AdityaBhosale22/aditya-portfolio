@@ -31,8 +31,8 @@ export const projects: Project[] = [
     techStack: ["Node.js", "Express.js", "PostgreSQL", "React", "Tailwind CSS", "Clerk", "OpenAI"],
     image: "/images/projects/project1.png",
     hoverImage: "/images/projects/project1-hover.png",
-    liveUrl: "https://adityabhosale.com",
-    githubUrl: "https://github.com/AdityaBhosale22",
+    liveUrl: "https://devapply-j5fi.vercel.app/",
+    githubUrl: "https://github.com/AdityaBhosale22/devapply",
     liveLabel: "Live Demo",
     githubLabel: "Source Code",
     color: "138, 43, 226"
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     image: "/images/projects/project2.png",
     hoverImage: "/images/projects/project2-hover.png",
     liveUrl: "https://adityabhosale.com",
-    githubUrl: "https://github.com/AdityaBhosale22",
+    githubUrl: "https://github.com/AdityaBhosale22/fusioncast",
     liveLabel: "Backend APIs",
     githubLabel: "Source Code",
     color: "0, 119, 182"
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     image: "/images/projects/project3.png",
     hoverImage: "/images/projects/project3-hover.png",
     liveUrl: "https://adityabhosale.com",
-    githubUrl: "https://github.com/AdityaBhosale22",
+    githubUrl: "https://github.com/AdityaBhosale22/nextjs-auth",
     liveLabel: "Live Demo",
     githubLabel: "Source Code",
     color: "220, 53, 69"
@@ -118,8 +118,8 @@ export const projects: Project[] = [
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     image: "/images/projects/project5.png",
     hoverImage: "/images/projects/project5-hover.png",
-    liveUrl: "https://adityabhosale.com",
-    githubUrl: "https://github.com/AdityaBhosale22/Ram-PortFolio",
+    liveUrl: "https://aditya-portfolio-psi-seven.vercel.app/",
+    githubUrl: "https://github.com/AdityaBhosale22",
     liveLabel: "Live Demo",
     githubLabel: "Source Code",
     color: "99, 102, 241"

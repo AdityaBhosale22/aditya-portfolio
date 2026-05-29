@@ -101,7 +101,7 @@ const InfoCards = memo(function InfoCards() {
           <div className="flex justify-center mb-1 xs:mb-1.5 sm:mb-2">
             <div className="relative">
               <Image
-                src="/icons/logo.svg"
+                src="/icons/logo.png"
                 alt="Aditya Portfolio Logo"
                 width={50}
                 height={50}
