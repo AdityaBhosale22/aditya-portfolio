@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import Container from '@/components/layout/Container';
 import Button from '@/components/ui/Button';
 import Badge from '@/components/ui/Badge';
@@ -199,7 +199,7 @@ const lessons = [
   },
 ];
 
-const sectionVariants = {
+const sectionVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -207,12 +207,15 @@ const sectionVariants = {
   },
 };
 
-const revealVariants = {
+const revealVariants: Variants = {
   hidden: { opacity: 0, y: 28 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
+    transition: {
+      duration: 0.7,
+      ease: "easeOut", // Now TypeScript knows this is the specific "easeOut" literal
+    },
   },
 };
 
