@@ -19,13 +19,13 @@ Missing PNG favicon files. Browsers and search engines prefer PNG/ICO over SVG.
 
 1. Go to: **https://realfavicongenerator.net/**
 2. Click "Select your Favicon image"
-3. Upload: `public/favicon.svg` or `src/app/icon.svg`
+3. Upload: `public/favicon.png` or `src/app/icon.svg`
 4. Keep all default settings
 5. Click "Generate your Favicons and HTML code"
 6. Click "Favicon package" to download
 7. Extract the ZIP file
 8. Copy these files to your `public/` folder:
-   - `favicon.ico`
+   - `favicon.png`
    - `favicon-16x16.png`
    - `favicon-32x32.png`
    - `apple-touch-icon.png`
@@ -35,7 +35,7 @@ Missing PNG favicon files. Browsers and search engines prefer PNG/ICO over SVG.
 **Option B: Use Favicon.io (Simpler)**
 
 1. Go to: **https://favicon.io/favicon-converter/**
-2. Upload: `public/favicon.svg`
+2. Upload: `public/favicon.png`
 3. Click "Download"
 4. Extract and copy all files to `public/` folder
 
@@ -58,13 +58,13 @@ After generating, ensure these files are in `public/` folder:
 
 ```
 public/
-├── favicon.ico ✓
+├── favicon.png ✓
 ├── favicon-16x16.png ✓
 ├── favicon-32x32.png ✓
 ├── apple-touch-icon.png ✓
 ├── android-chrome-192x192.png ✓
 ├── android-chrome-512x512.png ✓
-└── favicon.svg (already exists) ✓
+└── favicon.png (already exists) ✓
 ```
 
 ---
@@ -87,7 +87,7 @@ public/
 4. **Test favicon:**
    - Visit: https://rameshwarbhagwat.me
    - Check browser tab for favicon
-   - Test: https://rameshwarbhagwat.me/favicon.ico (should load)
+   - Test: https://rameshwarbhagwat.me/favicon.png (should load)
 
 5. **Verify with tools:**
    - https://realfavicongenerator.net/favicon_checker
@@ -134,12 +134,12 @@ After fixing favicon:
 ## 🆘 If Still Not Working
 
 1. **Check file accessibility:**
-   - https://rameshwarbhagwat.me/favicon.ico
+   - https://rameshwarbhagwat.me/favicon.png
    - https://rameshwarbhagwat.me/favicon-32x32.png
    - All should return 200 OK
 
 2. **Check file sizes:**
-   - favicon.ico: < 100KB
+   - favicon.png: < 100KB
    - PNGs: < 50KB each
 
 3. **Regenerate with different tool:**

@@ -76,7 +76,7 @@ NEXT_PUBLIC_SITE_URL=https://yourdomain.com
 ### Required Assets (See `/public/ASSETS-NEEDED.md`)
 - [ ] Create `og-image.png` (1200x630px)
 - [ ] Create `apple-touch-icon.png` (180x180px)
-- [ ] Optional: Create `favicon.ico` (32x32px)
+- [ ] Optional: Create `favicon.png` (32x32px)
 
 ### Update Social Links
 In `/src/app/layout.tsx`, update:

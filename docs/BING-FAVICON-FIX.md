@@ -19,20 +19,20 @@ Added multiple favicon formats with proper priority:
 ```tsx
 icons: {
   icon: [
-    { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' }, // Bing prefers this
-    { url: '/favicon.svg', type: 'image/svg+xml' },
+    { url: '/favicon.png', sizes: '32x32', type: 'image/x-icon' }, // Bing prefers this
+    { url: '/favicon.png', type: 'image/svg+xml' },
     { url: '/icon.svg', type: 'image/svg+xml' },
   ],
   shortcut: [
-    { url: '/favicon.ico', type: 'image/x-icon' }
+    { url: '/favicon.png', type: 'image/x-icon' }
   ],
   apple: [
-    { url: '/favicon.svg', type: 'image/svg+xml' }
+    { url: '/favicon.png', type: 'image/svg+xml' }
   ],
   other: [
     {
       rel: 'mask-icon',
-      url: '/favicon.svg',
+      url: '/favicon.png',
     },
   ],
 }
@@ -40,16 +40,16 @@ icons: {
 
 ### 2. Added Explicit Favicon Links in <head>
 ```html
-<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="32x32" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="apple-touch-icon" href="/favicon.svg" />
-<link rel="mask-icon" href="/favicon.svg" color="#FF5028" />
+<link rel="icon" type="image/x-icon" href="/favicon.png" sizes="32x32" />
+<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+<link rel="apple-touch-icon" href="/favicon.png" />
+<link rel="mask-icon" href="/favicon.png" color="#FF5028" />
 ```
 
 ### 3. Added Bing/Microsoft Specific Meta Tags
 ```html
 <meta name="msapplication-TileColor" content="#0F0E0E" />
-<meta name="msapplication-TileImage" content="/favicon.svg" />
+<meta name="msapplication-TileImage" content="/favicon.png" />
 <meta name="msapplication-config" content="/browserconfig.xml" />
 ```
 
@@ -60,7 +60,7 @@ File: `public/browserconfig.xml`
 
 ### 5. Updated site.webmanifest
 Added multiple icon sizes for better compatibility:
-- 32x32 (favicon.ico)
+- 32x32 (favicon.png)
 - 192x192 (SVG)
 - 512x512 (SVG)
 - Any size (SVG with maskable purpose)
@@ -99,14 +99,14 @@ Added multiple icon sizes for better compatibility:
 ### Step 3: Check Favicon Files
 
 Verify these files exist and are accessible:
-- ✅ `/favicon.ico` - Exists
-- ✅ `/favicon.svg` - Exists
+- ✅ `/favicon.png` - Exists
+- ✅ `/favicon.png` - Exists
 - ✅ `/browserconfig.xml` - Created
 - ✅ `/site.webmanifest` - Updated
 
 Test accessibility:
-- https://rameshwarbhagwat.me/favicon.ico
-- https://rameshwarbhagwat.me/favicon.svg
+- https://rameshwarbhagwat.me/favicon.png
+- https://rameshwarbhagwat.me/favicon.png
 - https://rameshwarbhagwat.me/browserconfig.xml
 
 ---
@@ -164,12 +164,12 @@ Check when Bing last crawled your site:
 Ensure favicon is not blocked:
 ```
 User-agent: *
-Allow: /favicon.ico
-Allow: /favicon.svg
+Allow: /favicon.png
+Allow: /favicon.png
 ```
 
 **Solution 3: Verify File Size**
-- favicon.ico should be < 100KB
+- favicon.png should be < 100KB
 - Check if file is corrupted
 
 **Solution 4: Add PNG Favicon**
@@ -193,7 +193,7 @@ If ICO doesn't work, create PNG versions:
 
 After deployment and Bing verification:
 
-- [ ] Favicon.ico accessible at /favicon.ico
+- [ ] favicon.png accessible at /favicon.png
 - [ ] Browserconfig.xml accessible at /browserconfig.xml
 - [ ] Site.webmanifest updated with multiple sizes
 - [ ] Bing Webmaster Tools verified

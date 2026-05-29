@@ -106,7 +106,7 @@ Your current logo is too detailed for small favicon sizes. You need a simplified
 6. **Convert to ICO:**
    - Use: https://convertio.co/png-ico/
    - Upload 32x32 PNG
-   - Download as favicon.ico
+   - Download as favicon.png
 
 ---
 
@@ -178,7 +178,7 @@ After generating, test quality:
 
 3. **Size Check:**
    ```
-   favicon.ico: < 100KB
+   favicon.png: < 100KB
    favicon-16x16.png: < 5KB
    favicon-32x32.png: < 10KB
    apple-touch-icon.png: < 50KB

@@ -106,29 +106,9 @@ export const metadata: Metadata = {
     "geo.region": "IN-MH",
     "geo.placename": "Pune",
   },
-  icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: '32x32' },
-    ],
-    shortcut: '/favicon.ico',
-    apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
-    ],
-    other: [
-      {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '192x192',
-        url: '/android-chrome-192x192.png',
-      },
-      {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '512x512',
-        url: '/android-chrome-512x512.png',
-      },
-    ],
-  },
+icons: {
+  icon: "/icons/favicon.png",
+},
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -265,8 +245,8 @@ export default function RootLayout({
         {/* Breadcrumb Schema */}
         <BreadcrumbSchema items={breadcrumbItems} />
         
-        {/* Favicon - ICO format for maximum compatibility */}
-        <link rel="icon" href="/favicon.ico" sizes="32x32" />
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.png" sizes="32x32" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
         
         {/* Bing/Microsoft specific meta tags */}

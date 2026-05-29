@@ -6,7 +6,7 @@ Your favicon wasn't showing because of incorrect configuration. Here's what was 
 
 ### Changes Made:
 
-1. ✅ **Copied favicon.ico to public folder** - Better browser compatibility
+1. ✅ **Copied favicon.png to public folder** - Better browser compatibility
 2. ✅ **Updated metadata icons configuration** - Proper order (ICO first, then SVG)
 3. ✅ **Added explicit link tags in HTML head** - Multiple format support
 4. ✅ **Added shortcut icon link** - Legacy browser support
@@ -18,11 +18,11 @@ Your favicon wasn't showing because of incorrect configuration. Here's what was 
 ```
 portfolio/
 ├── public/
-│   ├── favicon.ico          ✅ Standard favicon (all browsers)
-│   ├── favicon.svg          ✅ Modern SVG favicon (Chrome, Firefox, Safari)
+│   ├── favicon.png          ✅ Standard favicon (all browsers)
+│   ├── favicon.png          ✅ Modern SVG favicon (Chrome, Firefox, Safari)
 │   └── apple-touch-icon.png ⚠️ Needed for iOS (create this)
 └── src/app/
-    └── favicon.ico          ✅ Next.js auto-serves this
+    └── favicon.png          ✅ Next.js auto-serves this
 ```
 
 ---
@@ -69,8 +69,8 @@ Open your site in incognito/private browsing:
 
 Open these URLs directly in browser:
 ```
-https://rameshwarbhagwat.me/favicon.ico
-https://rameshwarbhagwat.me/favicon.svg
+https://rameshwarbhagwat.me/favicon.png
+https://rameshwarbhagwat.me/favicon.png
 ```
 
 Both should display your logo.
@@ -194,13 +194,13 @@ public/
 
 ### 1. File Formats
 
-**ICO (favicon.ico):**
+**ICO (favicon.png):**
 - ✅ Universal browser support
 - ✅ Works in all browsers
 - ✅ Can contain multiple sizes
 - ❌ Larger file size
 
-**SVG (favicon.svg):**
+**SVG (favicon.png):**
 - ✅ Scalable (looks sharp at any size)
 - ✅ Small file size
 - ✅ Modern browsers
@@ -261,12 +261,12 @@ If you update favicon and it's not showing:
 
 **Option 1: Version Query Parameter**
 ```html
-<link rel="icon" href="/favicon.ico?v=2" />
+<link rel="icon" href="/favicon.png?v=2" />
 ```
 
 **Option 2: Rename File**
 ```
-favicon.ico → favicon-v2.ico
+favicon.png → favicon-v2.ico
 ```
 
 **Option 3: Clear Vercel Cache**
@@ -286,10 +286,10 @@ Your current configuration in `src/app/layout.tsx`:
 export const metadata: Metadata = {
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "32x32" },
-      { url: "/favicon.svg", type: "image/svg+xml" }
+      { url: "/favicon.png", sizes: "32x32" },
+      { url: "/favicon.png", type: "image/svg+xml" }
     ],
-    shortcut: "/favicon.ico",
+    shortcut: "/favicon.png",
     apple: "/apple-touch-icon.png",
   },
   // ... other metadata
@@ -298,9 +298,9 @@ export const metadata: Metadata = {
 
 **And in HTML head:**
 ```html
-<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" type="image/x-icon" href="/favicon.png" />
+<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+<link rel="shortcut icon" href="/favicon.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 ```
 
@@ -316,8 +316,8 @@ If favicon isn't showing after deployment:
 2. [ ] Clear browser cache (Ctrl+Shift+Delete)
 3. [ ] Hard refresh (Ctrl+Shift+R)
 4. [ ] Try incognito mode
-5. [ ] Check `/favicon.ico` URL directly
-6. [ ] Check `/favicon.svg` URL directly
+5. [ ] Check `/favicon.png` URL directly
+6. [ ] Check `/favicon.png` URL directly
 7. [ ] Try different browser
 8. [ ] Check browser console for errors
 9. [ ] Verify files exist in `public/` folder
@@ -350,4 +350,4 @@ If favicon still doesn't show:
 
 **Last Updated**: February 28, 2026
 **Status**: Fixed and deployed
-**Files Updated**: `src/app/layout.tsx`, `public/favicon.ico`
+**Files Updated**: `src/app/layout.tsx`, `public/favicon.png`

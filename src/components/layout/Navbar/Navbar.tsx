@@ -30,7 +30,7 @@ export default function Navbar() {
             }}
           >
             <Image 
-              src="/icons/logo.svg" 
+              src="/icons/logo.png" 
               alt="Aditya Bhosale - Full Stack & AI Developer Logo" 
               width={80}
               height={80}
@@ -93,7 +93,7 @@ export default function Navbar() {
             }}
           >
             <Image 
-              src="/icons/logo.svg" 
+              src="/icons/logo.png" 
               alt="Aditya Bhosale Logo" 
               width={40}
               height={40}

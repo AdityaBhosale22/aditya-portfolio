@@ -2,14 +2,14 @@
 
 ## What Changed
 
-Your portfolio now uses `public/favicon.svg` as the primary favicon with proper fallback support.
+Your portfolio now uses `public/favicon.png` as the primary favicon with proper fallback support.
 
 ---
 
 ## Configuration
 
 ### Primary Favicon: SVG
-- **File**: `public/favicon.svg`
+- **File**: `public/favicon.png`
 - **Format**: SVG (Scalable Vector Graphics)
 - **Benefits**:
   - ✅ Sharp at any size
@@ -18,7 +18,7 @@ Your portfolio now uses `public/favicon.svg` as the primary favicon with proper 
   - ✅ Scales perfectly on high-DPI displays
 
 ### Fallback: ICO
-- **File**: `public/favicon.ico`
+- **File**: `public/favicon.png`
 - **Format**: ICO (Icon)
 - **Purpose**: Legacy browser support
 - **Used by**: Older browsers, Windows taskbar
@@ -29,11 +29,11 @@ Your portfolio now uses `public/favicon.svg` as the primary favicon with proper 
 
 ### Browser Priority:
 1. **Modern browsers** (Chrome, Firefox, Safari, Edge)
-   - Use `favicon.svg` (your logo)
+   - Use `favicon.png` (your logo)
    - Sharp and scalable
 
 2. **Older browsers** (IE, old Safari)
-   - Fall back to `favicon.ico`
+   - Fall back to `favicon.png`
    - Still shows your logo
 
 3. **iOS/Android home screen**
@@ -45,8 +45,8 @@ Your portfolio now uses `public/favicon.svg` as the primary favicon with proper 
 
 ```
 public/
-├── favicon.svg          ✅ Your logo (PRIMARY)
-├── favicon.ico          ✅ Fallback for old browsers
+├── favicon.png          ✅ Your logo (PRIMARY)
+├── favicon.png          ✅ Fallback for old browsers
 └── apple-touch-icon.png ⚠️  Create this for iOS (180x180px)
 ```
 
@@ -59,18 +59,18 @@ In `src/app/layout.tsx`:
 ```typescript
 icons: {
   icon: [
-    { url: "/favicon.svg", type: "image/svg+xml" },  // Primary
-    { url: "/favicon.ico", sizes: "32x32" }          // Fallback
+    { url: "/favicon.png", type: "image/svg+xml" },  // Primary
+    { url: "/favicon.png", sizes: "32x32" }          // Fallback
   ],
-  shortcut: "/favicon.svg",
+  shortcut: "/favicon.png",
   apple: "/apple-touch-icon.png",
 }
 ```
 
 And in HTML:
 ```html
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="alternate icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+<link rel="alternate icon" type="image/x-icon" href="/favicon.png" />
 ```
 
 ---
@@ -124,18 +124,18 @@ For iOS home screen (when users add to home screen):
 
 ### Option 1: Online Tool
 1. Go to [Favicon.io](https://favicon.io/favicon-converter/)
-2. Upload `public/favicon.svg`
+2. Upload `public/favicon.png`
 3. Download package
 4. Copy `apple-touch-icon.png` to `public/`
 
 ### Option 2: Design Tool
-1. Open `public/favicon.svg` in design tool
+1. Open `public/favicon.png` in design tool
 2. Export as PNG at 180x180px
 3. Save as `public/apple-touch-icon.png`
 
 ### Option 3: ImageMagick (if installed)
 ```bash
-convert public/favicon.svg -resize 180x180 public/apple-touch-icon.png
+convert public/favicon.png -resize 180x180 public/apple-touch-icon.png
 ```
 
 ---
@@ -167,7 +167,7 @@ convert public/favicon.svg -resize 180x180 public/apple-touch-icon.png
 1. **Clear cache** (most common issue)
 2. **Wait 5 minutes** after deployment
 3. **Try incognito mode**
-4. **Check URL directly**: `https://rameshwarbhagwat.me/favicon.svg`
+4. **Check URL directly**: `https://rameshwarbhagwat.me/favicon.png`
 5. **Hard refresh**: Ctrl+Shift+R
 
 ### Old Favicon Still Showing?
@@ -199,4 +199,4 @@ After deployment completes (2-3 minutes), clear your browser cache and you'll se
 
 **Last Updated**: February 28, 2026
 **Status**: Deployed
-**Primary Favicon**: `public/favicon.svg`
+**Primary Favicon**: `public/favicon.png`

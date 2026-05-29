@@ -3,7 +3,7 @@
 ## Problem Identified
 
 The favicon wasn't showing on the hosted website because:
-1. ❌ Old `favicon.ico` in `src/app/` was overriding public folder
+1. ❌ Old `favicon.png` in `src/app/` was overriding public folder
 2. ❌ Manual metadata configuration was conflicting with Next.js auto-detection
 3. ❌ Not using Next.js 13+ file-based metadata convention
 
@@ -20,7 +20,7 @@ Next.js 13+ automatically serves icons from the `app` directory using specific f
 
 ### What I Did:
 
-1. ✅ **Removed** `src/app/favicon.ico` (was causing conflict)
+1. ✅ **Removed** `src/app/favicon.png` (was causing conflict)
 2. ✅ **Created** `src/app/icon.svg` (your logo)
 3. ✅ **Removed** manual `icons` metadata configuration
 4. ✅ **Removed** manual `<link>` tags for favicon
@@ -35,8 +35,8 @@ portfolio/
 ├── src/app/
 │   └── icon.svg              ✅ Your logo (Next.js auto-serves this)
 └── public/
-    ├── favicon.svg           ✅ Backup (not used by Next.js)
-    └── favicon.ico           ✅ Legacy fallback
+    ├── favicon.png           ✅ Backup (not used by Next.js)
+    └── favicon.png           ✅ Legacy fallback
 ```
 
 ---
@@ -48,7 +48,7 @@ portfolio/
 1. **Next.js detects** `src/app/icon.svg`
 2. **Automatically generates** favicon routes:
    - `/icon.svg` → Your logo
-   - `/favicon.ico` → Auto-generated from SVG
+   - `/favicon.png` → Auto-generated from SVG
 3. **Serves to browsers** with proper headers
 4. **No manual configuration needed** ✅
 
@@ -106,7 +106,7 @@ Next.js 13+ uses file-based metadata conventions:
 
 | File | Purpose | Auto-Generated Route |
 |------|---------|---------------------|
-| `icon.svg` | Favicon | `/icon.svg`, `/favicon.ico` |
+| `icon.svg` | Favicon | `/icon.svg`, `/favicon.png` |
 | `apple-icon.png` | iOS icon | `/apple-icon.png` |
 | `opengraph-image.png` | OG image | `/opengraph-image.png` |
 
@@ -243,7 +243,7 @@ After 5 minutes:
 
 ## Summary
 
-✅ **Root Cause**: Old favicon.ico in src/app conflicting with configuration
+✅ **Root Cause**: Old favicon.png in src/app conflicting with configuration
 ✅ **Solution**: Use Next.js 13+ `icon.svg` convention
 ✅ **File**: `src/app/icon.svg` (your logo)
 ✅ **Configuration**: None needed (automatic)

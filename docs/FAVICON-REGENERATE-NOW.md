@@ -61,7 +61,7 @@ This has:
 
 7. **Copy files:** Replace these files in your `public/` folder:
    ```
-   favicon.ico
+   favicon.png
    favicon-16x16.png
    favicon-32x32.png
    apple-touch-icon.png
@@ -92,7 +92,7 @@ This has:
    # Should be small and crisp
    favicon-16x16.png: ~1-3 KB
    favicon-32x32.png: ~2-5 KB
-   favicon.ico: ~5-15 KB
+   favicon.png: ~5-15 KB
    ```
 
 2. **Visual check:**
@@ -193,7 +193,7 @@ After deploying:
 - [ ] Visit site in Firefox - check favicon
 - [ ] Visit site in Safari - check favicon
 - [ ] Test on mobile - check home screen icon
-- [ ] Verify: https://rameshwarbhagwat.me/favicon.ico loads
+- [ ] Verify: https://rameshwarbhagwat.me/favicon.png loads
 - [ ] Verify: https://rameshwarbhagwat.me/favicon-32x32.png loads
 - [ ] Use checker: https://realfavicongenerator.net/favicon_checker
 
