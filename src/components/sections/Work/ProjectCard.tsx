@@ -104,8 +104,18 @@ const ProjectCard = memo(function ProjectCard({ project, index }: ProjectCardPro
 
   const handleMouseEnter = useCallback(() => setIsHovered(true), []);
   const handleMouseLeave = useCallback(() => setIsHovered(false), []);
-  const handleLiveClick = useCallback(() => window.open(project.liveUrl, '_blank'), [project.liveUrl]);
-  const handleGithubClick = useCallback(() => window.open(project.githubUrl, '_blank'), [project.githubUrl]);
+  const handleLiveClick = useCallback(() => {
+    if (!project.liveUrl) return;
+
+    if (project.liveUrl.startsWith('/')) {
+      window.location.href = project.liveUrl;
+      return;
+    }
+
+    window.open(project.liveUrl, '_blank', 'noopener,noreferrer');
+  }, [project.liveUrl]);
+
+  const handleGithubClick = useCallback(() => window.open(project.githubUrl, '_blank', 'noopener,noreferrer'), [project.githubUrl]);
 
   // Memoize project schema
   const projectSchema = useMemo(() => ({

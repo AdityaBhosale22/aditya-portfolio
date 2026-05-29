@@ -5,25 +5,25 @@ import { motion, useInView } from 'framer-motion';
 
 // Static data - defined outside component
 const topRowItems = [
+  'Software Engineer',
   'Full Stack Developer',
-  'AI & ML Integration',
+  'AI Product Builder',
   'SaaS Architect',
-  'Product Builder',
-  'Next.js Expert',
-  'React Specialist',
-  'TypeScript Pro',
-  'API Designer',
+  'Backend Specialist',
+  'Cloud Native Developer',
+  'System Design Enthusiast',
+  'Tech Innovator',
 ];
 
 const bottomRowItems = [
-  '3+ Years Experience',
-  'Creative Developer',
-  '10+ Projects Delivered',
-  'Open Source Contributor',
-  'UI/UX Enthusiast',
-  'Performance Optimizer',
-  'Cloud Native Builder',
-  'Problem Solver',
+  'DevApply Creator',
+  'FusionCast Developer',
+  'Real-Time Dashboard Builder',
+  'Authentication Systems',
+  'Scalable APIs',
+  'PostgreSQL & MongoDB',
+  'AWS Deployment',
+  'OpenAI Integration',
 ];
 
 const PORTFOLIO_BACKGROUND = '#0F0E0E';
